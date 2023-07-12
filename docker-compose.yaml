@@ -38,7 +38,7 @@ services:
 
 
   gitlab:
-    image: 'gitlab/gitlab-ce:14.3.3-ce.0'
+    image: 'gitlab/gitlab-ce:15.11.11-ce.0'
     restart: always
     cpu_shares: 1024
     mem_limit: '4g'
