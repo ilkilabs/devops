@@ -61,7 +61,7 @@ services:
 
 
   jenkins:
-    image: rg.fr-par.scw.cloud/ilkilabs/jenkins:v2
+    image: rg.fr-par.scw.cloud/ilkilabs/jenkins:latest
     restart: always
     cpu_shares: 500
     mem_limit: '1g'
@@ -71,6 +71,8 @@ services:
     ports:
       - "8080:8080"
       - "5000:5000"
+    group_add:
+      - 998
     networks:
       - devops-net
 
