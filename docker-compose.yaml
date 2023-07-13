@@ -72,7 +72,7 @@ services:
       - "8080:8080"
       - "5000:5000"
     group_add:
-      - 998
+      - "998"
     networks:
       - devops-net
 
